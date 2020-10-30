@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Assignment 1',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -21,13 +22,13 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
         // This makes the visual density adapt to the platform that you run
         // the app on. For desktop platforms, the controls will be smaller and
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Flutter Assignment 1'),
     );
   }
 }
@@ -84,10 +85,11 @@ class _MyHomePageState extends State<MyHomePage> {
           Card(
             elevation: 0,
             clipBehavior: Clip.antiAlias,
-            child: Column(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ButtonBar(
-                  alignment: MainAxisAlignment.spaceAround,
+                  alignment: MainAxisAlignment.spaceBetween,
                   children: [
                     RaisedButton(
                       textColor: Colors.grey[700],
@@ -154,6 +156,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ],
                 ),
+                Icon(Icons.arrow_forward_ios, color: Colors.orange, size: 20),
               ],
             ),
           ),
@@ -162,6 +165,7 @@ class _MyHomePageState extends State<MyHomePage> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(30.0),
             ),
+            elevation: 5,
             child: Row(
               children: [
                //Image.asset('images/nike.jpg',
@@ -261,8 +265,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         Icon(Icons.star, color: Colors.orange[500], size: 15),
                         Icon(Icons.star, color: Colors.orange[500], size: 15),
                         Icon(Icons.star, color: Colors.orange[500], size: 15),
-                        Icon(Icons.star, color: Colors.grey[250], size: 15),
-                        Icon(Icons.star, color: Colors.grey, size: 15),
+                        Icon(Icons.star_half, color: Colors.orange[500], size: 15),
+                        Icon(Icons.star_border, color: Colors.orange[500], size: 15),
                       ],
                     ),
 
@@ -277,11 +281,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       SizedBox(width: 40),
-                      Icon(Icons.shopping_cart, color: Colors.grey[400], size: 15),
+                      Icon(Icons.shopping_cart_outlined, color: Colors.grey[400], size: 15),
                       SizedBox(width: 10),
-                      Icon(Icons.rate_review, color: Colors.grey[400], size: 15),
+                      Icon(Icons.refresh, color: Colors.grey[400], size: 15),
                       SizedBox(width: 10),
-                      Icon(Icons.favorite, color: Colors.grey[400], size: 15),
+                      Icon(Icons.favorite_border_outlined, color: Colors.grey[400], size: 15),
                       SizedBox(width: 10),
                     ],
                   ),
@@ -295,6 +299,7 @@ class _MyHomePageState extends State<MyHomePage> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(30.0),
             ),
+            elevation: 5,
             child: Row(
               children: [
                 Column(
@@ -373,8 +378,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           Icon(Icons.star, color: Colors.orange[500], size: 15),
                           Icon(Icons.star, color: Colors.orange[500], size: 15),
                           Icon(Icons.star, color: Colors.orange[500], size: 15),
-                          Icon(Icons.star, color: Colors.grey[250], size: 15),
-                          Icon(Icons.star, color: Colors.grey, size: 15),
+                          Icon(Icons.star_half, color: Colors.orange[500], size: 15),
+                          Icon(Icons.star_border, color: Colors.orange[500], size: 15),
                         ],
                       ),
 
@@ -389,11 +394,11 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                           SizedBox(width: 40),
-                          Icon(Icons.shopping_cart, color: Colors.grey[400], size: 15),
+                          Icon(Icons.shopping_cart_outlined, color: Colors.grey[400], size: 15),
                           SizedBox(width: 10),
-                          Icon(Icons.rate_review, color: Colors.grey[400], size: 15),
+                          Icon(Icons.refresh, color: Colors.grey[400], size: 15),
                           SizedBox(width: 10),
-                          Icon(Icons.favorite, color: Colors.grey[400], size: 15),
+                          Icon(Icons.favorite_border_outlined, color: Colors.grey[400], size: 15),
                           SizedBox(width: 10),
                         ],
                       ),
@@ -407,6 +412,7 @@ class _MyHomePageState extends State<MyHomePage> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(30.0),
             ),
+            elevation: 5,
             child: Row(
               children: [
                 Column(
@@ -485,8 +491,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           Icon(Icons.star, color: Colors.orange[500], size: 15),
                           Icon(Icons.star, color: Colors.orange[500], size: 15),
                           Icon(Icons.star, color: Colors.orange[500], size: 15),
-                          Icon(Icons.star, color: Colors.grey[250], size: 15),
-                          Icon(Icons.star, color: Colors.grey, size: 15),
+                          Icon(Icons.star_half, color: Colors.orange[500], size: 15),
+                          Icon(Icons.star_border, color: Colors.orange[500], size: 15),
                         ],
                       ),
 
@@ -501,11 +507,11 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                           SizedBox(width: 40),
-                          Icon(Icons.shopping_cart, color: Colors.grey[400], size: 15),
+                          Icon(Icons.shopping_cart_outlined, color: Colors.grey[400], size: 15),
                           SizedBox(width: 10),
-                          Icon(Icons.rate_review, color: Colors.grey[400], size: 15),
+                          Icon(Icons.refresh, color: Colors.grey[400], size: 15),
                           SizedBox(width: 10),
-                          Icon(Icons.favorite, color: Colors.grey[400], size: 15),
+                          Icon(Icons.favorite_border_outlined, color: Colors.grey[400], size: 15),
                           SizedBox(width: 10),
                         ],
                       ),
@@ -519,6 +525,8 @@ class _MyHomePageState extends State<MyHomePage> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(30.0),
             ),
+            elevation: 5,
+
             child: Row(
               children: [
                 Column(
@@ -615,8 +623,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           Icon(Icons.star, color: Colors.orange[500], size: 15),
                           Icon(Icons.star, color: Colors.orange[500], size: 15),
                           Icon(Icons.star, color: Colors.orange[500], size: 15),
-                          Icon(Icons.star, color: Colors.grey[250], size: 15),
-                          Icon(Icons.star, color: Colors.grey, size: 15),
+                          Icon(Icons.star_half, color: Colors.orange[500], size: 15),
+                          Icon(Icons.star_border, color: Colors.orange[500], size: 15),
                         ],
                       ),
 
@@ -631,11 +639,11 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                           SizedBox(width: 40),
-                          Icon(Icons.shopping_cart, color: Colors.grey[400], size: 15),
+                          Icon(Icons.shopping_cart_outlined, color: Colors.grey[400], size: 15),
                           SizedBox(width: 10),
-                          Icon(Icons.rate_review, color: Colors.grey[400], size: 15),
+                          Icon(Icons.refresh, color: Colors.grey[400], size: 15),
                           SizedBox(width: 10),
-                          Icon(Icons.favorite, color: Colors.grey[400], size: 15),
+                          Icon(Icons.favorite_border_outlined, color: Colors.grey[400], size: 15),
                           SizedBox(width: 10),
                         ],
                       ),
